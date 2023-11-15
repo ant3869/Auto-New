@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.nightForm1 = new ReaLTaiizor.Forms.NightForm();
-            this.dreamTextBox1 = new ReaLTaiizor.Controls.DreamTextBox();
-            this.crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
-            this.crownLabel2 = new ReaLTaiizor.Controls.CrownLabel();
-            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.crownLabel3 = new ReaLTaiizor.Controls.CrownLabel();
-            this.dreamTextBox2 = new ReaLTaiizor.Controls.DreamTextBox();
-            this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonCheckButton2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButton2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.dreamTextBox2 = new ReaLTaiizor.Controls.DreamTextBox();
+            this.crownLabel3 = new ReaLTaiizor.Controls.CrownLabel();
+            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.crownLabel2 = new ReaLTaiizor.Controls.CrownLabel();
+            this.crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
+            this.dreamTextBox1 = new ReaLTaiizor.Controls.DreamTextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.nightForm1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             // nightForm1
             // 
             this.nightForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.nightForm1.Controls.Add(this.statusStrip1);
             this.nightForm1.Controls.Add(this.checkBox1);
             this.nightForm1.Controls.Add(this.kryptonCheckButton3);
             this.nightForm1.Controls.Add(this.kryptonCheckButton2);
@@ -71,60 +73,39 @@
             this.nightForm1.TitleBarTextColor = System.Drawing.Color.Gainsboro;
             this.nightForm1.Click += new System.EventHandler(this.nightForm1_Click);
             // 
-            // dreamTextBox1
+            // checkBox1
             // 
-            this.dreamTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.dreamTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dreamTextBox1.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.dreamTextBox1.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.dreamTextBox1.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.dreamTextBox1.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dreamTextBox1.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dreamTextBox1.ColorF = System.Drawing.Color.Black;
-            this.dreamTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.dreamTextBox1.Location = new System.Drawing.Point(134, 68);
-            this.dreamTextBox1.Name = "dreamTextBox1";
-            this.dreamTextBox1.Size = new System.Drawing.Size(83, 23);
-            this.dreamTextBox1.TabIndex = 0;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(282, 157);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(70, 19);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "multiple";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // crownLabel1
+            // kryptonCheckButton3
             // 
-            this.crownLabel1.AutoSize = true;
-            this.crownLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.crownLabel1.Location = new System.Drawing.Point(133, 52);
-            this.crownLabel1.Name = "crownLabel1";
-            this.crownLabel1.Size = new System.Drawing.Size(41, 15);
-            this.crownLabel1.TabIndex = 3;
-            this.crownLabel1.Text = "UserID";
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(282, 123);
+            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(67, 26);
+            this.kryptonCheckButton3.TabIndex = 10;
+            this.kryptonCheckButton3.Values.Text = "kryptonCheckButton3";
             // 
-            // crownLabel2
+            // kryptonCheckButton2
             // 
-            this.crownLabel2.AutoSize = true;
-            this.crownLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.crownLabel2.Location = new System.Drawing.Point(131, 105);
-            this.crownLabel2.Name = "crownLabel2";
-            this.crownLabel2.Size = new System.Drawing.Size(88, 15);
-            this.crownLabel2.TabIndex = 4;
-            this.crownLabel2.Text = "Reason for Visit";
+            this.kryptonCheckButton2.Location = new System.Drawing.Point(209, 123);
+            this.kryptonCheckButton2.Name = "kryptonCheckButton2";
+            this.kryptonCheckButton2.Size = new System.Drawing.Size(67, 26);
+            this.kryptonCheckButton2.TabIndex = 9;
+            this.kryptonCheckButton2.Values.Text = "kryptonCheckButton2";
             // 
-            // kryptonComboBox1
+            // kryptonCheckButton1
             // 
-            this.kryptonComboBox1.DropDownWidth = 140;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(136, 155);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.kryptonComboBox1.TabIndex = 5;
-            this.kryptonComboBox1.Text = "kryptonComboBox1";
-            // 
-            // crownLabel3
-            // 
-            this.crownLabel3.AutoSize = true;
-            this.crownLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.crownLabel3.Location = new System.Drawing.Point(133, 194);
-            this.crownLabel3.Name = "crownLabel3";
-            this.crownLabel3.Size = new System.Drawing.Size(67, 15);
-            this.crownLabel3.TabIndex = 6;
-            this.crownLabel3.Text = "Description";
+            this.kryptonCheckButton1.Location = new System.Drawing.Point(136, 123);
+            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
+            this.kryptonCheckButton1.Size = new System.Drawing.Size(67, 26);
+            this.kryptonCheckButton1.TabIndex = 8;
+            this.kryptonCheckButton1.Values.Text = "kryptonCheckButton1";
             // 
             // dreamTextBox2
             // 
@@ -143,39 +124,69 @@
             this.dreamTextBox2.Size = new System.Drawing.Size(211, 77);
             this.dreamTextBox2.TabIndex = 7;
             // 
-            // kryptonCheckButton1
+            // crownLabel3
             // 
-            this.kryptonCheckButton1.Location = new System.Drawing.Point(136, 123);
-            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
-            this.kryptonCheckButton1.Size = new System.Drawing.Size(67, 26);
-            this.kryptonCheckButton1.TabIndex = 8;
-            this.kryptonCheckButton1.Values.Text = "kryptonCheckButton1";
+            this.crownLabel3.AutoSize = true;
+            this.crownLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.crownLabel3.Location = new System.Drawing.Point(133, 194);
+            this.crownLabel3.Name = "crownLabel3";
+            this.crownLabel3.Size = new System.Drawing.Size(67, 15);
+            this.crownLabel3.TabIndex = 6;
+            this.crownLabel3.Text = "Description";
             // 
-            // kryptonCheckButton2
+            // kryptonComboBox1
             // 
-            this.kryptonCheckButton2.Location = new System.Drawing.Point(209, 123);
-            this.kryptonCheckButton2.Name = "kryptonCheckButton2";
-            this.kryptonCheckButton2.Size = new System.Drawing.Size(67, 26);
-            this.kryptonCheckButton2.TabIndex = 9;
-            this.kryptonCheckButton2.Values.Text = "kryptonCheckButton2";
+            this.kryptonComboBox1.DropDownWidth = 140;
+            this.kryptonComboBox1.Location = new System.Drawing.Point(136, 155);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.Size = new System.Drawing.Size(140, 21);
+            this.kryptonComboBox1.TabIndex = 5;
+            this.kryptonComboBox1.Text = "kryptonComboBox1";
             // 
-            // kryptonCheckButton3
+            // crownLabel2
             // 
-            this.kryptonCheckButton3.Location = new System.Drawing.Point(282, 123);
-            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
-            this.kryptonCheckButton3.Size = new System.Drawing.Size(67, 26);
-            this.kryptonCheckButton3.TabIndex = 10;
-            this.kryptonCheckButton3.Values.Text = "kryptonCheckButton3";
+            this.crownLabel2.AutoSize = true;
+            this.crownLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.crownLabel2.Location = new System.Drawing.Point(131, 105);
+            this.crownLabel2.Name = "crownLabel2";
+            this.crownLabel2.Size = new System.Drawing.Size(88, 15);
+            this.crownLabel2.TabIndex = 4;
+            this.crownLabel2.Text = "Reason for Visit";
             // 
-            // checkBox1
+            // crownLabel1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(282, 157);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(70, 19);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "multiple";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.crownLabel1.AutoSize = true;
+            this.crownLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.crownLabel1.Location = new System.Drawing.Point(133, 52);
+            this.crownLabel1.Name = "crownLabel1";
+            this.crownLabel1.Size = new System.Drawing.Size(41, 15);
+            this.crownLabel1.TabIndex = 3;
+            this.crownLabel1.Text = "UserID";
+            // 
+            // dreamTextBox1
+            // 
+            this.dreamTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.dreamTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dreamTextBox1.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.dreamTextBox1.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.dreamTextBox1.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.dreamTextBox1.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dreamTextBox1.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dreamTextBox1.ColorF = System.Drawing.Color.Black;
+            this.dreamTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.dreamTextBox1.Location = new System.Drawing.Point(134, 68);
+            this.dreamTextBox1.Name = "dreamTextBox1";
+            this.dreamTextBox1.Size = new System.Drawing.Size(83, 23);
+            this.dreamTextBox1.TabIndex = 0;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.TabIndex = 12;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // Form2
             // 
@@ -209,5 +220,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
