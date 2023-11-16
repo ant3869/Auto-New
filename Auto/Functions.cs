@@ -102,7 +102,5 @@ namespace Auto
         {
             // Handle Item 2 click
         }
-
-  
     }
 }

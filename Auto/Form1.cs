@@ -207,8 +207,6 @@ namespace Auto
             else
                 selectedButton = clickedButton;
 
-
-
             // Call HandleButtonClick to update the state and dropdown
             this.HandleButtonClick(buttonName);
         }
