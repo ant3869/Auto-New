@@ -1,7 +1,7 @@
 ﻿
-namespace Auto_IMS
+namespace Auto
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,7 @@ namespace Auto_IMS
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_bottom = new System.Windows.Forms.Panel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.button_Submit = new System.Windows.Forms.Button();
             this.button_Generate = new System.Windows.Forms.Button();
             this.button_Clear = new System.Windows.Forms.Button();
@@ -43,20 +44,19 @@ namespace Auto_IMS
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox_location = new System.Windows.Forms.ComboBox();
             this.panel_right = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Description = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox_Subject = new System.Windows.Forms.ComboBox();
+            this.radioButton_Mobile = new System.Windows.Forms.RadioButton();
+            this.radioButton_MAC = new System.Windows.Forms.RadioButton();
+            this.radioButton_PC = new System.Windows.Forms.RadioButton();
             this.button_Issue = new System.Windows.Forms.Button();
             this.button_Equipment = new System.Windows.Forms.Button();
             this.button_Question = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.radioButton_PC = new System.Windows.Forms.RadioButton();
-            this.radioButton_MAC = new System.Windows.Forms.RadioButton();
-            this.radioButton_Mobile = new System.Windows.Forms.RadioButton();
-            this.comboBox_Subject = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox_Description = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel_bottom.SuspendLayout();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -74,6 +74,15 @@ namespace Auto_IMS
             this.panel_bottom.Name = "panel_bottom";
             this.panel_bottom.Size = new System.Drawing.Size(1174, 159);
             this.panel_bottom.TabIndex = 0;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 137);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1174, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // button_Submit
             // 
@@ -210,84 +219,49 @@ namespace Auto_IMS
             this.panel_right.Size = new System.Drawing.Size(518, 770);
             this.panel_right.TabIndex = 2;
             // 
-            // button_Issue
+            // textBox2
             // 
-            this.button_Issue.Location = new System.Drawing.Point(349, 273);
-            this.button_Issue.Name = "button_Issue";
-            this.button_Issue.Size = new System.Drawing.Size(160, 71);
-            this.button_Issue.TabIndex = 5;
-            this.button_Issue.Text = "Issue";
-            this.button_Issue.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(29, 52);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(169, 46);
+            this.textBox2.TabIndex = 15;
             // 
-            // button_Equipment
+            // textBox1
             // 
-            this.button_Equipment.Location = new System.Drawing.Point(182, 273);
-            this.button_Equipment.Name = "button_Equipment";
-            this.button_Equipment.Size = new System.Drawing.Size(160, 71);
-            this.button_Equipment.TabIndex = 4;
-            this.button_Equipment.Text = "Equipment";
-            this.button_Equipment.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(29, 664);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(477, 84);
+            this.textBox1.TabIndex = 14;
             // 
-            // button_Question
+            // textBox_Description
             // 
-            this.button_Question.Location = new System.Drawing.Point(16, 273);
-            this.button_Question.Name = "button_Question";
-            this.button_Question.Size = new System.Drawing.Size(160, 71);
-            this.button_Question.TabIndex = 3;
-            this.button_Question.Text = "Question";
-            this.button_Question.UseVisualStyleBackColor = true;
+            this.textBox_Description.Location = new System.Drawing.Point(29, 542);
+            this.textBox_Description.Multiline = true;
+            this.textBox_Description.Name = "textBox_Description";
+            this.textBox_Description.Size = new System.Drawing.Size(477, 71);
+            this.textBox_Description.TabIndex = 13;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bogle", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "UserID";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bogle", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 628);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 33);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Work Notes";
             // 
-            // statusStrip1
+            // label2
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 137);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1174, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // radioButton_PC
-            // 
-            this.radioButton_PC.AutoSize = true;
-            this.radioButton_PC.Location = new System.Drawing.Point(212, 52);
-            this.radioButton_PC.Name = "radioButton_PC";
-            this.radioButton_PC.Size = new System.Drawing.Size(72, 29);
-            this.radioButton_PC.TabIndex = 6;
-            this.radioButton_PC.TabStop = true;
-            this.radioButton_PC.Text = "PC";
-            this.radioButton_PC.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_MAC
-            // 
-            this.radioButton_MAC.AutoSize = true;
-            this.radioButton_MAC.Location = new System.Drawing.Point(290, 52);
-            this.radioButton_MAC.Name = "radioButton_MAC";
-            this.radioButton_MAC.Size = new System.Drawing.Size(90, 29);
-            this.radioButton_MAC.TabIndex = 7;
-            this.radioButton_MAC.TabStop = true;
-            this.radioButton_MAC.Text = "MAC";
-            this.radioButton_MAC.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_Mobile
-            // 
-            this.radioButton_Mobile.AutoSize = true;
-            this.radioButton_Mobile.Location = new System.Drawing.Point(390, 52);
-            this.radioButton_Mobile.Name = "radioButton_Mobile";
-            this.radioButton_Mobile.Size = new System.Drawing.Size(107, 29);
-            this.radioButton_Mobile.TabIndex = 8;
-            this.radioButton_Mobile.TabStop = true;
-            this.radioButton_Mobile.Text = "Mobile";
-            this.radioButton_Mobile.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bogle", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 506);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 33);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Description";
             // 
             // comboBox_Subject
             // 
@@ -300,51 +274,80 @@ namespace Auto_IMS
             this.comboBox_Subject.Size = new System.Drawing.Size(169, 33);
             this.comboBox_Subject.TabIndex = 10;
             // 
-            // label2
+            // radioButton_Mobile
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bogle", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 506);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 33);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Description";
+            this.radioButton_Mobile.AutoSize = true;
+            this.radioButton_Mobile.Location = new System.Drawing.Point(390, 52);
+            this.radioButton_Mobile.Name = "radioButton_Mobile";
+            this.radioButton_Mobile.Size = new System.Drawing.Size(107, 29);
+            this.radioButton_Mobile.TabIndex = 8;
+            this.radioButton_Mobile.TabStop = true;
+            this.radioButton_Mobile.Text = "Mobile";
+            this.radioButton_Mobile.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // radioButton_MAC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bogle", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 628);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 33);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Work Notes";
+            this.radioButton_MAC.AutoSize = true;
+            this.radioButton_MAC.Location = new System.Drawing.Point(290, 52);
+            this.radioButton_MAC.Name = "radioButton_MAC";
+            this.radioButton_MAC.Size = new System.Drawing.Size(90, 29);
+            this.radioButton_MAC.TabIndex = 7;
+            this.radioButton_MAC.TabStop = true;
+            this.radioButton_MAC.Text = "MAC";
+            this.radioButton_MAC.UseVisualStyleBackColor = true;
             // 
-            // textBox_Description
+            // radioButton_PC
             // 
-            this.textBox_Description.Location = new System.Drawing.Point(29, 542);
-            this.textBox_Description.Multiline = true;
-            this.textBox_Description.Name = "textBox_Description";
-            this.textBox_Description.Size = new System.Drawing.Size(477, 71);
-            this.textBox_Description.TabIndex = 13;
+            this.radioButton_PC.AutoSize = true;
+            this.radioButton_PC.Location = new System.Drawing.Point(212, 52);
+            this.radioButton_PC.Name = "radioButton_PC";
+            this.radioButton_PC.Size = new System.Drawing.Size(72, 29);
+            this.radioButton_PC.TabIndex = 6;
+            this.radioButton_PC.TabStop = true;
+            this.radioButton_PC.Text = "PC";
+            this.radioButton_PC.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // button_Issue
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 664);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(477, 84);
-            this.textBox1.TabIndex = 14;
+            this.button_Issue.Location = new System.Drawing.Point(349, 273);
+            this.button_Issue.Name = "button_Issue";
+            this.button_Issue.Size = new System.Drawing.Size(160, 71);
+            this.button_Issue.TabIndex = 5;
+            this.button_Issue.Text = "Issue";
+            this.button_Issue.UseVisualStyleBackColor = true;
+            this.button_Issue.Click += new System.EventHandler(this.button_Issue_Click);
             // 
-            // textBox2
+            // button_Equipment
             // 
-            this.textBox2.Location = new System.Drawing.Point(29, 52);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 46);
-            this.textBox2.TabIndex = 15;
+            this.button_Equipment.Location = new System.Drawing.Point(182, 273);
+            this.button_Equipment.Name = "button_Equipment";
+            this.button_Equipment.Size = new System.Drawing.Size(160, 71);
+            this.button_Equipment.TabIndex = 4;
+            this.button_Equipment.Text = "Equipment";
+            this.button_Equipment.UseVisualStyleBackColor = true;
+            this.button_Equipment.Click += new System.EventHandler(this.button_Equipment_Click);
             // 
-            // Form1
+            // button_Question
+            // 
+            this.button_Question.Location = new System.Drawing.Point(16, 273);
+            this.button_Question.Name = "button_Question";
+            this.button_Question.Size = new System.Drawing.Size(160, 71);
+            this.button_Question.TabIndex = 3;
+            this.button_Question.Text = "Question";
+            this.button_Question.UseVisualStyleBackColor = true;
+            this.button_Question.Click += new System.EventHandler(this.button_Question_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bogle", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "UserID";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -355,7 +358,7 @@ namespace Auto_IMS
             this.Controls.Add(this.panel_bottom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            //this.Name = "Form12";
+            //this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auto IMS";
