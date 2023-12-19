@@ -54,9 +54,9 @@ namespace Auto
             this.checkBox_PRB = new System.Windows.Forms.CheckBox();
             this.kryptonDropButton_domain = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_AppVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -71,6 +71,10 @@ namespace Auto
             this.button_Start = new System.Windows.Forms.Button();
             this.button_settings = new System.Windows.Forms.Button();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonCheckButton_Fetch = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             kryptonButton_Run = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -95,7 +99,7 @@ namespace Auto
             kryptonButton_Run.Cursor = System.Windows.Forms.Cursors.Hand;
             kryptonButton_Run.Dock = System.Windows.Forms.DockStyle.Right;
             kryptonButton_Run.Location = new System.Drawing.Point(428, 0);
-            kryptonButton_Run.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            kryptonButton_Run.Margin = new System.Windows.Forms.Padding(12);
             kryptonButton_Run.Name = "kryptonButton_Run";
             kryptonButton_Run.Size = new System.Drawing.Size(412, 421);
             kryptonButton_Run.TabIndex = 16;
@@ -109,7 +113,7 @@ namespace Auto
             // kryptonLabel_userid
             // 
             this.kryptonLabel_userid.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.SuperTip;
-            this.kryptonLabel_userid.Location = new System.Drawing.Point(975, 364);
+            this.kryptonLabel_userid.Location = new System.Drawing.Point(336, 189);
             this.kryptonLabel_userid.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonLabel_userid.Name = "kryptonLabel_userid";
             this.kryptonLabel_userid.Size = new System.Drawing.Size(99, 44);
@@ -123,7 +127,7 @@ namespace Auto
             this.kryptonPanel1.Controls.Add(this.kryptonPanel2);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel3);
             this.kryptonPanel1.Location = new System.Drawing.Point(3588, 1708);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(196, 181);
             this.kryptonPanel1.TabIndex = 1;
@@ -133,7 +137,7 @@ namespace Auto
             // 
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, -573);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Size = new System.Drawing.Size(196, 754);
             this.kryptonPanel2.TabIndex = 0;
@@ -144,7 +148,7 @@ namespace Auto
             this.kryptonPanel3.Controls.Add(this.kryptonListBox1);
             this.kryptonPanel3.Controls.Add(this.kryptonGroup1);
             this.kryptonPanel3.Location = new System.Drawing.Point(80, 265);
-            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonPanel3.Name = "kryptonPanel3";
             this.kryptonPanel3.Size = new System.Drawing.Size(1508, 1402);
             this.kryptonPanel3.TabIndex = 1;
@@ -159,7 +163,7 @@ namespace Auto
             this.kryptonPanel4.Controls.Add(this.kryptonRadioButton3);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonPanel4.Location = new System.Drawing.Point(0, 604);
-            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonPanel4.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonPanel4.Name = "kryptonPanel4";
             this.kryptonPanel4.Size = new System.Drawing.Size(1508, 798);
             this.kryptonPanel4.TabIndex = 0;
@@ -168,7 +172,7 @@ namespace Auto
             // 
             this.kryptonCheckButton_Inquiry.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonCheckButton_Inquiry.Location = new System.Drawing.Point(620, 44);
-            this.kryptonCheckButton_Inquiry.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonCheckButton_Inquiry.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonCheckButton_Inquiry.Name = "kryptonCheckButton_Inquiry";
             this.kryptonCheckButton_Inquiry.Size = new System.Drawing.Size(460, 225);
             this.kryptonCheckButton_Inquiry.TabIndex = 22;
@@ -179,7 +183,7 @@ namespace Auto
             // 
             this.kryptonRadioButton_Mac.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonRadioButton_Mac.Location = new System.Drawing.Point(116, 169);
-            this.kryptonRadioButton_Mac.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonRadioButton_Mac.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonRadioButton_Mac.Name = "kryptonRadioButton_Mac";
             this.kryptonRadioButton_Mac.Size = new System.Drawing.Size(73, 37);
             this.kryptonRadioButton_Mac.TabIndex = 10;
@@ -189,7 +193,7 @@ namespace Auto
             // 
             this.kryptonRadioButton_PC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonRadioButton_PC.Location = new System.Drawing.Point(116, 44);
-            this.kryptonRadioButton_PC.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonRadioButton_PC.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonRadioButton_PC.Name = "kryptonRadioButton_PC";
             this.kryptonRadioButton_PC.Size = new System.Drawing.Size(56, 37);
             this.kryptonRadioButton_PC.TabIndex = 9;
@@ -199,7 +203,7 @@ namespace Auto
             // 
             this.kryptonRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonRadioButton1.Location = new System.Drawing.Point(116, 313);
-            this.kryptonRadioButton1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonRadioButton1.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonRadioButton1.Name = "kryptonRadioButton1";
             this.kryptonRadioButton1.Size = new System.Drawing.Size(103, 37);
             this.kryptonRadioButton1.TabIndex = 11;
@@ -209,7 +213,7 @@ namespace Auto
             // 
             this.kryptonRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonRadioButton2.Location = new System.Drawing.Point(232, 440);
-            this.kryptonRadioButton2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonRadioButton2.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonRadioButton2.Name = "kryptonRadioButton2";
             this.kryptonRadioButton2.Size = new System.Drawing.Size(85, 37);
             this.kryptonRadioButton2.TabIndex = 12;
@@ -219,7 +223,7 @@ namespace Auto
             // 
             this.kryptonRadioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonRadioButton3.Location = new System.Drawing.Point(236, 581);
-            this.kryptonRadioButton3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonRadioButton3.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonRadioButton3.Name = "kryptonRadioButton3";
             this.kryptonRadioButton3.Size = new System.Drawing.Size(90, 37);
             this.kryptonRadioButton3.TabIndex = 13;
@@ -236,9 +240,9 @@ namespace Auto
             "Subjects"});
             this.kryptonListBox1.ItemStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.LowProfile;
             this.kryptonListBox1.Location = new System.Drawing.Point(920, -81);
-            this.kryptonListBox1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonListBox1.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonListBox1.Name = "kryptonListBox1";
-            this.kryptonListBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonListBox1.Padding = new System.Windows.Forms.Padding(4);
             this.kryptonListBox1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.kryptonListBox1.Size = new System.Drawing.Size(500, 702);
             this.kryptonListBox1.Sorted = true;
@@ -249,7 +253,7 @@ namespace Auto
             this.kryptonGroup1.GroupBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.PanelClient;
             this.kryptonGroup1.GroupBorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.ButtonLowProfile;
             this.kryptonGroup1.Location = new System.Drawing.Point(52, 112);
-            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonGroup1.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
@@ -264,7 +268,7 @@ namespace Auto
             this.kryptonButton_Settings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton_Settings.Dock = System.Windows.Forms.DockStyle.Left;
             this.kryptonButton_Settings.Location = new System.Drawing.Point(0, 0);
-            this.kryptonButton_Settings.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonButton_Settings.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonButton_Settings.Name = "kryptonButton_Settings";
             this.kryptonButton_Settings.Size = new System.Drawing.Size(416, 421);
             this.kryptonButton_Settings.TabIndex = 14;
@@ -279,7 +283,7 @@ namespace Auto
             // 
             this.kryptonTextBox_UserID.AlwaysActive = false;
             this.kryptonTextBox_UserID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.kryptonTextBox_UserID.Location = new System.Drawing.Point(1078, 371);
+            this.kryptonTextBox_UserID.Location = new System.Drawing.Point(439, 196);
             this.kryptonTextBox_UserID.Margin = new System.Windows.Forms.Padding(4, 44, 4, 4);
             this.kryptonTextBox_UserID.MaxLength = 7;
             this.kryptonTextBox_UserID.Name = "kryptonTextBox_UserID";
@@ -310,7 +314,7 @@ namespace Auto
             // 
             this.kryptonLinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonLinkLabel1.Location = new System.Drawing.Point(322, 1590);
-            this.kryptonLinkLabel1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonLinkLabel1.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
             this.kryptonLinkLabel1.Size = new System.Drawing.Size(153, 33);
             this.kryptonLinkLabel1.StateNormal.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -322,7 +326,7 @@ namespace Auto
             // 
             this.kryptonDropButton_TechBarLocations.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonDropButton_TechBarLocations.Location = new System.Drawing.Point(3260, 52);
-            this.kryptonDropButton_TechBarLocations.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonDropButton_TechBarLocations.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonDropButton_TechBarLocations.Name = "kryptonDropButton_TechBarLocations";
             this.kryptonDropButton_TechBarLocations.Size = new System.Drawing.Size(524, 181);
             this.kryptonDropButton_TechBarLocations.TabIndex = 15;
@@ -332,7 +336,7 @@ namespace Auto
             // 
             this.kryptonLinkLabel_cmsearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonLinkLabel_cmsearch.Location = new System.Drawing.Point(490, 1590);
-            this.kryptonLinkLabel_cmsearch.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonLinkLabel_cmsearch.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonLinkLabel_cmsearch.Name = "kryptonLinkLabel_cmsearch";
             this.kryptonLinkLabel_cmsearch.Size = new System.Drawing.Size(138, 33);
             this.kryptonLinkLabel_cmsearch.StateNormal.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -344,7 +348,7 @@ namespace Auto
             // 
             this.kryptonLinkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonLinkLabel2.Location = new System.Drawing.Point(644, 1590);
-            this.kryptonLinkLabel2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonLinkLabel2.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
             this.kryptonLinkLabel2.Size = new System.Drawing.Size(113, 33);
             this.kryptonLinkLabel2.StateNormal.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
@@ -356,7 +360,7 @@ namespace Auto
             // 
             this.checkBox_PRB.AutoSize = true;
             this.checkBox_PRB.Location = new System.Drawing.Point(2392, 1475);
-            this.checkBox_PRB.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.checkBox_PRB.Margin = new System.Windows.Forms.Padding(12);
             this.checkBox_PRB.Name = "checkBox_PRB";
             this.checkBox_PRB.Size = new System.Drawing.Size(87, 29);
             this.checkBox_PRB.TabIndex = 20;
@@ -368,10 +372,10 @@ namespace Auto
             this.kryptonDropButton_domain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonDropButton_domain.Images.Common = global::Auto.Properties.Resources.bullet_arrow_down;
             this.kryptonDropButton_domain.Images.Normal = global::Auto.Properties.Resources.bullet_arrow_down;
-            this.kryptonDropButton_domain.Location = new System.Drawing.Point(1257, 132);
-            this.kryptonDropButton_domain.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonDropButton_domain.Location = new System.Drawing.Point(524, 22);
+            this.kryptonDropButton_domain.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonDropButton_domain.Name = "kryptonDropButton_domain";
-            this.kryptonDropButton_domain.Size = new System.Drawing.Size(166, 44);
+            this.kryptonDropButton_domain.Size = new System.Drawing.Size(166, 39);
             this.kryptonDropButton_domain.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 0, -1, -2);
             this.kryptonDropButton_domain.StateCommon.Content.ShortText.Color1 = System.Drawing.SystemColors.Highlight;
             this.kryptonDropButton_domain.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -397,17 +401,30 @@ namespace Auto
             this.statusStrip1.GripMargin = new System.Windows.Forms.Padding(0);
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel4,
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
+            this.toolStripStatusLabel4,
             this.toolStripStatusLabel_AppVersion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 990);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 894);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(4, 0, 56, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(1525, 42);
+            this.statusStrip1.Size = new System.Drawing.Size(1425, 42);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 30;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(79, 32);
+            this.toolStripStatusLabel1.Text = "Status";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(79, 32);
+            this.toolStripStatusLabel2.Text = "Ready";
+            this.toolStripStatusLabel2.Visible = false;
             // 
             // toolStripStatusLabel4
             // 
@@ -418,23 +435,10 @@ namespace Auto
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(16, 32);
             this.toolStripStatusLabel4.Text = "toolStripStatusLabel4";
             // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(78, 32);
-            this.toolStripStatusLabel1.Text = "Status";
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(78, 32);
-            this.toolStripStatusLabel2.Text = "Ready";
-            this.toolStripStatusLabel2.Visible = false;
-            // 
             // toolStripStatusLabel_AppVersion
             // 
             this.toolStripStatusLabel_AppVersion.Name = "toolStripStatusLabel_AppVersion";
-            this.toolStripStatusLabel_AppVersion.Size = new System.Drawing.Size(3042, 32);
+            this.toolStripStatusLabel_AppVersion.Size = new System.Drawing.Size(1270, 32);
             this.toolStripStatusLabel_AppVersion.Spring = true;
             this.toolStripStatusLabel_AppVersion.Text = "v. 1.0.0";
             this.toolStripStatusLabel_AppVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -448,7 +452,7 @@ namespace Auto
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.radioButton1.Location = new System.Drawing.Point(36, 33);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(12);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(70, 29);
             this.radioButton1.TabIndex = 32;
@@ -465,7 +469,7 @@ namespace Auto
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.radioButton2.Location = new System.Drawing.Point(36, 196);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(12);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(82, 29);
             this.radioButton2.TabIndex = 35;
@@ -482,7 +486,7 @@ namespace Auto
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.radioButton3.Location = new System.Drawing.Point(36, 360);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(12);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(105, 29);
             this.radioButton3.TabIndex = 36;
@@ -498,7 +502,7 @@ namespace Auto
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.radioButton4.Location = new System.Drawing.Point(88, 529);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(12);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(364, 125);
             this.radioButton4.TabIndex = 37;
@@ -515,7 +519,7 @@ namespace Auto
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.radioButton5.Location = new System.Drawing.Point(88, 673);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(12);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(91, 28);
             this.radioButton5.TabIndex = 38;
@@ -525,8 +529,8 @@ namespace Auto
             // 
             // CheckButton_Issue
             // 
-            this.CheckButton_Issue.Location = new System.Drawing.Point(1288, 200);
-            this.CheckButton_Issue.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.CheckButton_Issue.Location = new System.Drawing.Point(641, 259);
+            this.CheckButton_Issue.Margin = new System.Windows.Forms.Padding(12);
             this.CheckButton_Issue.Name = "CheckButton_Issue";
             this.CheckButton_Issue.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.CheckButton_Issue.Size = new System.Drawing.Size(135, 69);
@@ -536,8 +540,8 @@ namespace Auto
             // 
             // CheckButton_Inquiry
             // 
-            this.CheckButton_Inquiry.Location = new System.Drawing.Point(975, 200);
-            this.CheckButton_Inquiry.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.CheckButton_Inquiry.Location = new System.Drawing.Point(328, 259);
+            this.CheckButton_Inquiry.Margin = new System.Windows.Forms.Padding(12);
             this.CheckButton_Inquiry.Name = "CheckButton_Inquiry";
             this.CheckButton_Inquiry.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.CheckButton_Inquiry.Size = new System.Drawing.Size(135, 69);
@@ -547,8 +551,8 @@ namespace Auto
             // 
             // CheckButton_Equip
             // 
-            this.CheckButton_Equip.Location = new System.Drawing.Point(1134, 200);
-            this.CheckButton_Equip.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.CheckButton_Equip.Location = new System.Drawing.Point(487, 259);
+            this.CheckButton_Equip.Margin = new System.Windows.Forms.Padding(12);
             this.CheckButton_Equip.Name = "CheckButton_Equip";
             this.CheckButton_Equip.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
             this.CheckButton_Equip.Size = new System.Drawing.Size(135, 69);
@@ -561,8 +565,8 @@ namespace Auto
             this.kryptonDropButton_subject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonDropButton_subject.Images.Common = global::Auto.Properties.Resources.bullet_arrow_down;
             this.kryptonDropButton_subject.Images.Normal = global::Auto.Properties.Resources.bullet_arrow_down;
-            this.kryptonDropButton_subject.Location = new System.Drawing.Point(1163, 283);
-            this.kryptonDropButton_subject.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.kryptonDropButton_subject.Location = new System.Drawing.Point(516, 342);
+            this.kryptonDropButton_subject.Margin = new System.Windows.Forms.Padding(12);
             this.kryptonDropButton_subject.Name = "kryptonDropButton_subject";
             this.kryptonDropButton_subject.OverrideDefault.Content.ShortText.Color1 = System.Drawing.SystemColors.Highlight;
             this.kryptonDropButton_subject.OverrideDefault.Content.ShortText.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
@@ -591,8 +595,8 @@ namespace Auto
             this.kryptonGroupBox_Device.Panel.Controls.Add(this.radioButton4);
             this.kryptonGroupBox_Device.Panel.Controls.Add(this.radioButton3);
             this.kryptonGroupBox_Device.Panel.Controls.Add(this.radioButton5);
-            this.kryptonGroupBox_Device.Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonGroupBox_Device.Panel.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.kryptonGroupBox_Device.Panel.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonGroupBox_Device.Panel.Padding = new System.Windows.Forms.Padding(8);
             this.kryptonGroupBox_Device.Size = new System.Drawing.Size(496, 1017);
             this.kryptonGroupBox_Device.StateCommon.Back.Color1 = System.Drawing.Color.SlateGray;
             this.kryptonGroupBox_Device.StateCommon.Back.Color2 = System.Drawing.Color.LightSteelBlue;
@@ -634,8 +638,8 @@ namespace Auto
             this.button_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Start.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button_Start.Image = global::Auto.Properties.Resources.Apps_system_software_update_icon_icon__1_;
-            this.button_Start.Location = new System.Drawing.Point(1336, 449);
-            this.button_Start.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.button_Start.Location = new System.Drawing.Point(689, 508);
+            this.button_Start.Margin = new System.Windows.Forms.Padding(12);
             this.button_Start.Name = "button_Start";
             this.button_Start.Size = new System.Drawing.Size(87, 79);
             this.button_Start.TabIndex = 45;
@@ -650,8 +654,8 @@ namespace Auto
             this.button_settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_settings.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button_settings.Image = global::Auto.Properties.Resources.Exe__Execute__Gears__Package__Settings__System__Utilities__Wheels_icon_icon;
-            this.button_settings.Location = new System.Drawing.Point(1245, 449);
-            this.button_settings.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.button_settings.Location = new System.Drawing.Point(598, 508);
+            this.button_settings.Margin = new System.Windows.Forms.Padding(12);
             this.button_settings.Name = "button_settings";
             this.button_settings.Size = new System.Drawing.Size(87, 79);
             this.button_settings.TabIndex = 45;
@@ -661,12 +665,59 @@ namespace Auto
             // 
             this.kryptonPalette1.ButtonSpecs.ArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("kryptonPalette1.ButtonSpecs.ArrowDown.Image")));
             // 
+            // kryptonCheckButton_Fetch
+            // 
+            this.kryptonCheckButton_Fetch.Location = new System.Drawing.Point(714, 21);
+            this.kryptonCheckButton_Fetch.Margin = new System.Windows.Forms.Padding(12);
+            this.kryptonCheckButton_Fetch.Name = "kryptonCheckButton_Fetch";
+            this.kryptonCheckButton_Fetch.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
+            this.kryptonCheckButton_Fetch.Size = new System.Drawing.Size(100, 51);
+            this.kryptonCheckButton_Fetch.TabIndex = 46;
+            this.kryptonCheckButton_Fetch.Values.Text = "Fetch";
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(598, 204);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(165, 29);
+            this.radioButton6.TabIndex = 47;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "radioButton6";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(769, 204);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(165, 29);
+            this.radioButton7.TabIndex = 48;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "radioButton7";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(940, 204);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(165, 29);
+            this.radioButton8.TabIndex = 49;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "radioButton8";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(1525, 1032);
+            this.ClientSize = new System.Drawing.Size(1425, 936);
+            this.Controls.Add(this.radioButton8);
+            this.Controls.Add(this.radioButton7);
+            this.Controls.Add(this.radioButton6);
+            this.Controls.Add(this.kryptonCheckButton_Fetch);
             this.Controls.Add(this.kryptonDropButton_subject);
             this.Controls.Add(this.kryptonDropButton_domain);
             this.Controls.Add(this.kryptonTextBox_UserID);
@@ -685,7 +736,7 @@ namespace Auto
             this.Controls.Add(this.kryptonDropButton_TechBarLocations);
             this.Controls.Add(this.kryptonPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.Margin = new System.Windows.Forms.Padding(12);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
@@ -759,6 +810,10 @@ namespace Auto
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton CheckButton_Inquiry;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton CheckButton_Equip;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton CheckButton_Issue;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton_Fetch;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }
 

@@ -54,10 +54,6 @@
       <HintPath>..\..\..\..\source\repos\Auto\Auto\bin\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="ReaLTaiizor, Version=3.7.9.7, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\source\repos\Auto\Auto\bin\Debug\ReaLTaiizor.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />

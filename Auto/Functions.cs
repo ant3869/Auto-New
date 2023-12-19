@@ -88,6 +88,14 @@ namespace Auto
                     menuItems.Items.Add(new KryptonContextMenuItem("Issue 1", null, Item_Click));
                     menuItems.Items.Add(new KryptonContextMenuItem("Issue 2", null, Item2_Click));
                     break;
+                case "kryptonDropButton_Location":
+                    menuItems.Items.Add(new KryptonContextMenuItem("J Street", null, Item_Click));
+                    menuItems.Items.Add(new KryptonContextMenuItem("DGTC", null, Item2_Click));
+                    menuItems.Items.Add(new KryptonContextMenuItem("Homeoffice", null, Item_Click));
+                    menuItems.Items.Add(new KryptonContextMenuItem("Sams Club", null, Item2_Click));
+                    menuItems.Items.Add(new KryptonContextMenuItem("MLK", null, Item_Click));
+                    menuItems.Items.Add(new KryptonContextMenuItem("Aviation", null, Item2_Click));
+                    break;
             }
 
             return menuItems;

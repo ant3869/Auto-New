@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace Auto
 {
@@ -23,6 +24,7 @@ namespace Auto
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; // Make the form borderless
+            Functions.PopulateDropDown(kryptonDropButton_Location, "kryptonDropButton_Location");
         }
 
         private void YourForm_MouseDown(object sender, MouseEventArgs e)
@@ -40,6 +42,11 @@ namespace Auto
         }
 
         private void nightHeaderLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
