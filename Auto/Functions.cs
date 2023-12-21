@@ -7,11 +7,14 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Auto.ComboBoxUpdater;
 
 namespace Auto
 {
     public static class Functions
     {
+        private static string[] allButtons = { "question", "equipment", "issue", "none" };
+
         //public static Dictionary<string, string> equipmentDict = new Dictionary<string, string>();
 
         //public static void CreateDictions()
@@ -112,24 +115,139 @@ namespace Auto
         //    // Handle Item 2 click
         //}
 
-        public static void UpdateButtonAppearance(Button selectedButton)
+        //public static void UpdateButtonAppearance(Button selectedButton)
+        //{
+        //    string butname = selectedButton.Name;
+        //    string selected = MainForm.buttselect.ToString(); 
+
+        //    // Apply selected style
+        //    selectedButton.BackColor = Color.LightBlue; // Or any color you prefer
+        //    selectedButton.FlatStyle = FlatStyle.Flat;
+        //    selectedButton.FlatAppearance.BorderColor = Color.Blue; // Border color
+        //    selectedButton.FlatAppearance.BorderSize = 2; // Border size
+
+        //    if (butname != selected)
+        //    {
+
+        //    }
+
+
+
+
+
+
+                
+
+        //    foreach (Button but in MainForm.allButtons)
+
+        //    switch (butname)
+        //    {
+        //        case selected:
+
+        //        case "equipment":
+        //            UpdateComboBox(dropBut, equipmentDict);
+        //            break;
+        //        case "question":
+        //            UpdateComboBox(dropBut, questionDict);
+        //            break;
+        //        case "issue":
+        //            UpdateComboBox(dropBut, issueDict);
+        //            break;
+        //        default:
+        //            dropBut.Items.Clear();
+        //            break;
+        //    }
+        //}
+
+        //private static Button SelectedVisuals()
+        //{
+        //    Button but = new Button();
+
+        //    // Apply selected style
+        //    but.BackColor = Color.LightBlue;
+        //    but.FlatStyle = FlatStyle.Flat;
+        //    but.FlatAppearance.BorderColor = Color.Blue;
+        //    but.FlatAppearance.BorderSize = 2;
+
+        //    return but;
+        //}
+
+        //public static void ResetAllButtonsAppearance(params Button[] buttons)
+        //{
+        //    foreach (var button in buttons)
+        //    {
+        //        button.BackColor = SystemColors.Control; // Default color
+        //        button.FlatStyle = FlatStyle.Standard;
+        //        button.FlatAppearance.BorderColor = SystemColors.ControlDark; // Default border color
+        //        button.FlatAppearance.BorderSize = 1; // Default border size
+        //    }
+        //}
+
+        //public static void ResetAllButtonsAppearance(Button selectedButton)
+        //{
+        //    foreach (var button in allButtons)
+        //    {
+        //        if (button != selectedButton)
+        //        {
+        //            button.BackColor = SystemColors.Control; // Default color
+        //            button.FlatStyle = FlatStyle.Standard;
+        //            button.FlatAppearance.BorderColor = SystemColors.ControlDark; // Default border color
+        //            button.FlatAppearance.BorderSize = 1; // Default border size
+        //        }
+        //    }
+        //}
+
+        public static void HandleButtonSelection(Button selectedButton, Button[] allButtons, ComboBox comboBox, string comboBoxContext)
         {
-            // Apply selected style
-            selectedButton.BackColor = Color.LightBlue; // Or any color you prefer
-            selectedButton.FlatStyle = FlatStyle.Flat;
-            selectedButton.FlatAppearance.BorderColor = Color.Blue; // Border color
-            selectedButton.FlatAppearance.BorderSize = 2; // Border size
+            PopulateDropDown(comboBox, comboBoxContext);
+            ResetAllButtonsAppearance(allButtons);
+            UpdateButtonAppearance(selectedButton);     
+            EnableOrDisableOtherButtons(selectedButton, allButtons, false);
         }
 
-        public static void ResetAllButtonsAppearance(params Button[] buttons)
+        private static void UpdateButtonAppearance(Button selectedButton)
         {
-            foreach (var button in buttons)
+            // Apply selected style
+            selectedButton.BackColor = Color.LightGreen; 
+            selectedButton.FlatStyle = FlatStyle.Flat;
+            selectedButton.FlatAppearance.BorderColor = Color.Blue;
+            selectedButton.FlatAppearance.BorderSize = 1; 
+        }
+
+        //private static void ResetAllButtonsAppearance(Button selectedButton, Button[] allButtons)
+        //{
+        //    foreach (var button in allButtons)
+        //    {
+        //        if (button != selectedButton)
+        //        {
+        //            button.BackColor = SystemColors.Control; 
+        //            button.FlatStyle = FlatStyle.Standard;
+        //            button.FlatAppearance.BorderColor = SystemColors.ControlDark; 
+        //            button.FlatAppearance.BorderSize = 1;
+        //        }
+        //    }
+        //}
+
+        private static void ResetAllButtonsAppearance(Button[] allButtons)
+        {
+            foreach (var button in allButtons)
             {
-                button.BackColor = SystemColors.Control; // Default color
+                button.BackColor = SystemColors.Control;
                 button.FlatStyle = FlatStyle.Standard;
-                button.FlatAppearance.BorderColor = SystemColors.ControlDark; // Default border color
-                button.FlatAppearance.BorderSize = 1; // Default border size
+                button.FlatAppearance.BorderColor = SystemColors.ControlDark;
+                button.FlatAppearance.BorderSize = 1;
             }
+        }
+
+        private static void EnableOrDisableOtherButtons(Button selectedButton, Button[] allButtons, bool enabled)
+        {
+            //foreach (var button in allButtons)
+            //{
+            //    if (button != selectedButton)
+            //    {
+            //        button.Enabled = enabled;
+            //    }
+            //}
         }
     }
 
@@ -222,6 +340,18 @@ namespace Auto
             foreach (var item in dict)
             {
                 comboBox.Items.Add(item.Key);
+            }
+        }
+
+        private static void UpdateDescriptionText(TextBox box, Dictionary<string, string> dict)
+        {
+            box.Text = "";
+
+
+
+            foreach (var item in dict)
+            {
+                //box.Items.Add(item.Key);
             }
         }
     }
