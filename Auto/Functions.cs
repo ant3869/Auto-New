@@ -197,11 +197,17 @@ namespace Auto
         //    }
         //}
 
+<<<<<<< HEAD
         public static void HandleButtonSelection(Button selectedButton, Button[] allButtons, ComboBox comboBox)
         {
             string name = selectedButton.Name.Substring(selectedButton.Name.IndexOf('_') + 1).ToLower();
 
             PopulateDropDown(comboBox, name);
+=======
+        public static void HandleButtonSelection(Button selectedButton, Button[] allButtons, ComboBox comboBox, string comboBoxContext)
+        {
+            PopulateDropDown(comboBox, comboBoxContext);
+>>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
             ResetAllButtonsAppearance(allButtons);
             UpdateButtonAppearance(selectedButton);     
             EnableOrDisableOtherButtons(selectedButton, allButtons, false);
@@ -209,9 +215,17 @@ namespace Auto
 
         private static void UpdateButtonAppearance(Button selectedButton)
         {
+<<<<<<< HEAD
             selectedButton.BackColor = Color.LightGreen;
             selectedButton.FlatAppearance.BorderColor = Color.Blue;
             selectedButton.FlatAppearance.BorderSize = 2;
+=======
+            // Apply selected style
+            selectedButton.BackColor = Color.LightGreen; 
+            selectedButton.FlatStyle = FlatStyle.Flat;
+            selectedButton.FlatAppearance.BorderColor = Color.Blue;
+            selectedButton.FlatAppearance.BorderSize = 1; 
+>>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
         }
 
         //private static void ResetAllButtonsAppearance(Button selectedButton, Button[] allButtons)
@@ -232,7 +246,11 @@ namespace Auto
         {
             foreach (var button in allButtons)
             {
+<<<<<<< HEAD
                 button.BackColor = SystemColors.Window;
+=======
+                button.BackColor = SystemColors.Control;
+>>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
                 button.FlatStyle = FlatStyle.Standard;
                 button.FlatAppearance.BorderColor = SystemColors.ControlDark;
                 button.FlatAppearance.BorderSize = 1;
@@ -347,6 +365,11 @@ namespace Auto
         {
             box.Text = "";
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
             foreach (var item in dict)
             {
                 //box.Items.Add(item.Key);
