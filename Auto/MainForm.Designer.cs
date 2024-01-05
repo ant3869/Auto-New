@@ -29,20 +29,20 @@ namespace Auto
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.button_Submit = new System.Windows.Forms.Button();
             this.button_Generate = new System.Windows.Forms.Button();
             this.button_Clear = new System.Windows.Forms.Button();
             this.panel_left = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Issue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox_location = new System.Windows.Forms.ComboBox();
             this.panel_right = new System.Windows.Forms.Panel();
+            this.radioButton_Replace = new System.Windows.Forms.RadioButton();
             this.textBox_userID = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox_Description = new System.Windows.Forms.TextBox();
@@ -56,8 +56,6 @@ namespace Auto
             this.button_Equipment = new System.Windows.Forms.Button();
             this.button_Question = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Issue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_bottom.SuspendLayout();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -116,36 +114,28 @@ namespace Auto
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NameColumn,
             this.Issue});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 78);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 78);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(634, 626);
@@ -182,7 +172,7 @@ namespace Auto
             // comboBox_location
             // 
             this.comboBox_location.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox_location.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox_location.BackColor = System.Drawing.SystemColors.Window;
             this.comboBox_location.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox_location.DropDownHeight = 110;
             this.comboBox_location.Font = new System.Drawing.Font("Bogle", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -203,6 +193,7 @@ namespace Auto
             // 
             // panel_right
             // 
+            this.panel_right.Controls.Add(this.radioButton_Replace);
             this.panel_right.Controls.Add(this.textBox_userID);
             this.panel_right.Controls.Add(this.textBox1);
             this.panel_right.Controls.Add(this.textBox_Description);
@@ -222,6 +213,20 @@ namespace Auto
             this.panel_right.Size = new System.Drawing.Size(518, 770);
             this.panel_right.TabIndex = 2;
             // 
+            // radioButton_Replace
+            // 
+            this.radioButton_Replace.AutoCheck = false;
+            this.radioButton_Replace.AutoSize = true;
+            this.radioButton_Replace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton_Replace.Font = new System.Drawing.Font("Bogle", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_Replace.Location = new System.Drawing.Point(396, 360);
+            this.radioButton_Replace.Name = "radioButton_Replace";
+            this.radioButton_Replace.Size = new System.Drawing.Size(107, 30);
+            this.radioButton_Replace.TabIndex = 17;
+            this.radioButton_Replace.Text = "Replace";
+            this.radioButton_Replace.UseVisualStyleBackColor = true;
+            this.radioButton_Replace.Visible = false;
+            // 
             // textBox_userID
             // 
             this.textBox_userID.Font = new System.Drawing.Font("Bogle", 7.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,25 +237,31 @@ namespace Auto
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 648);
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Bogle", 7.875F);
+            this.textBox1.Location = new System.Drawing.Point(12, 648);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(477, 100);
+            this.textBox1.Size = new System.Drawing.Size(494, 100);
             this.textBox1.TabIndex = 14;
             // 
             // textBox_Description
             // 
-            this.textBox_Description.Location = new System.Drawing.Point(29, 515);
+            this.textBox_Description.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Description.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Description.Location = new System.Drawing.Point(12, 515);
             this.textBox_Description.Multiline = true;
             this.textBox_Description.Name = "textBox_Description";
-            this.textBox_Description.Size = new System.Drawing.Size(477, 98);
+            this.textBox_Description.Size = new System.Drawing.Size(494, 98);
             this.textBox_Description.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bogle", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 618);
+            this.label3.Location = new System.Drawing.Point(5, 621);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 33);
             this.label3.TabIndex = 12;
@@ -260,7 +271,7 @@ namespace Auto
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bogle", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 484);
+            this.label2.Location = new System.Drawing.Point(8, 486);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 33);
             this.label2.TabIndex = 11;
@@ -268,48 +279,51 @@ namespace Auto
             // 
             // comboBox_Subject
             // 
-            this.comboBox_Subject.BackColor = System.Drawing.Color.AliceBlue;
+            this.comboBox_Subject.BackColor = System.Drawing.SystemColors.Window;
             this.comboBox_Subject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox_Subject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox_Subject.Font = new System.Drawing.Font("Bogle", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Subject.FormattingEnabled = true;
             this.comboBox_Subject.ItemHeight = 38;
-            this.comboBox_Subject.Location = new System.Drawing.Point(182, 360);
+            this.comboBox_Subject.Location = new System.Drawing.Point(12, 350);
             this.comboBox_Subject.Name = "comboBox_Subject";
-            this.comboBox_Subject.Size = new System.Drawing.Size(324, 46);
+            this.comboBox_Subject.Size = new System.Drawing.Size(372, 46);
             this.comboBox_Subject.TabIndex = 10;
             this.comboBox_Subject.SelectedIndexChanged += new System.EventHandler(this.comboBox_Subject_SelectedIndexChanged);
             // 
             // radioButton_Mobile
             // 
+            this.radioButton_Mobile.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton_Mobile.AutoSize = true;
             this.radioButton_Mobile.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_Mobile.Location = new System.Drawing.Point(166, 78);
+            this.radioButton_Mobile.Location = new System.Drawing.Point(142, 228);
             this.radioButton_Mobile.Name = "radioButton_Mobile";
-            this.radioButton_Mobile.Size = new System.Drawing.Size(106, 33);
+            this.radioButton_Mobile.Size = new System.Drawing.Size(85, 39);
             this.radioButton_Mobile.TabIndex = 8;
-            this.radioButton_Mobile.TabStop = true;
             this.radioButton_Mobile.Text = "Mobile";
             this.radioButton_Mobile.UseVisualStyleBackColor = true;
             // 
             // radioButton_MAC
             // 
+            this.radioButton_MAC.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton_MAC.AutoSize = true;
             this.radioButton_MAC.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_MAC.Location = new System.Drawing.Point(78, 78);
+            this.radioButton_MAC.Location = new System.Drawing.Point(68, 228);
             this.radioButton_MAC.Name = "radioButton_MAC";
-            this.radioButton_MAC.Size = new System.Drawing.Size(91, 33);
+            this.radioButton_MAC.Size = new System.Drawing.Size(70, 39);
             this.radioButton_MAC.TabIndex = 7;
-            this.radioButton_MAC.TabStop = true;
             this.radioButton_MAC.Text = "MAC";
             this.radioButton_MAC.UseVisualStyleBackColor = true;
             // 
             // radioButton_PC
             // 
+            this.radioButton_PC.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton_PC.AutoSize = true;
+            this.radioButton_PC.Checked = true;
             this.radioButton_PC.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_PC.Location = new System.Drawing.Point(12, 78);
+            this.radioButton_PC.Location = new System.Drawing.Point(12, 228);
             this.radioButton_PC.Name = "radioButton_PC";
-            this.radioButton_PC.Size = new System.Drawing.Size(71, 33);
+            this.radioButton_PC.Size = new System.Drawing.Size(50, 39);
             this.radioButton_PC.TabIndex = 6;
             this.radioButton_PC.TabStop = true;
             this.radioButton_PC.Text = "PC";
@@ -317,35 +331,38 @@ namespace Auto
             // 
             // button_Issue
             // 
+            this.button_Issue.BackColor = System.Drawing.SystemColors.Window;
             this.button_Issue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Issue.Location = new System.Drawing.Point(349, 273);
+            this.button_Issue.Location = new System.Drawing.Point(12, 273);
             this.button_Issue.Name = "button_Issue";
             this.button_Issue.Size = new System.Drawing.Size(160, 71);
             this.button_Issue.TabIndex = 5;
             this.button_Issue.Text = "Issue";
-            this.button_Issue.UseVisualStyleBackColor = true;
+            this.button_Issue.UseVisualStyleBackColor = false;
             this.button_Issue.Click += new System.EventHandler(this.button_Issue_Click);
             // 
             // button_Equipment
             // 
+            this.button_Equipment.BackColor = System.Drawing.SystemColors.Window;
             this.button_Equipment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Equipment.Location = new System.Drawing.Point(182, 273);
+            this.button_Equipment.Location = new System.Drawing.Point(181, 273);
             this.button_Equipment.Name = "button_Equipment";
             this.button_Equipment.Size = new System.Drawing.Size(160, 71);
             this.button_Equipment.TabIndex = 4;
             this.button_Equipment.Text = "Equipment";
-            this.button_Equipment.UseVisualStyleBackColor = true;
+            this.button_Equipment.UseVisualStyleBackColor = false;
             this.button_Equipment.Click += new System.EventHandler(this.button_Equipment_Click);
             // 
             // button_Question
             // 
+            this.button_Question.BackColor = System.Drawing.SystemColors.Window;
             this.button_Question.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Question.Location = new System.Drawing.Point(16, 273);
+            this.button_Question.Location = new System.Drawing.Point(350, 273);
             this.button_Question.Name = "button_Question";
             this.button_Question.Size = new System.Drawing.Size(160, 71);
             this.button_Question.TabIndex = 3;
             this.button_Question.Text = "Question";
-            this.button_Question.UseVisualStyleBackColor = true;
+            this.button_Question.UseVisualStyleBackColor = false;
             this.button_Question.Click += new System.EventHandler(this.button_Question_Click);
             // 
             // label1
@@ -357,24 +374,6 @@ namespace Auto
             this.label1.Size = new System.Drawing.Size(87, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "UserID";
-            // 
-            // NameColumn
-            // 
-            this.NameColumn.Frozen = true;
-            this.NameColumn.HeaderText = "Name";
-            this.NameColumn.MinimumWidth = 10;
-            this.NameColumn.Name = "NameColumn";
-            this.NameColumn.ReadOnly = true;
-            this.NameColumn.Width = 200;
-            // 
-            // Issue
-            // 
-            this.Issue.Frozen = true;
-            this.Issue.HeaderText = "Issue";
-            this.Issue.MinimumWidth = 10;
-            this.Issue.Name = "Issue";
-            this.Issue.ReadOnly = true;
-            this.Issue.Width = 200;
             // 
             // MainForm
             // 
@@ -426,6 +425,7 @@ namespace Auto
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Issue;
+        private System.Windows.Forms.RadioButton radioButton_Replace;
     }
 }
 

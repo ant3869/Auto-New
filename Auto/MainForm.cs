@@ -16,7 +16,7 @@ namespace Auto
     {
         public static Button[] allButtons;
         public static buttonselection buttselect;
-        private static string selectedbuttonname;
+       // private static string selectedbuttonname;
 
 
         public MainForm()
@@ -49,8 +49,30 @@ namespace Auto
 
         private void buttoncontroller(Button but)
         {
+            radioButton_Replace.Checked = false;
+
             buttselect = enumcontroller(but.Name.ToLower());
             Functions.HandleButtonSelection(but, allButtons, comboBox_Subject);
+
+            if (buttselect != buttonselection.question)
+            {
+                radioButton_Replace.Visible = true;
+
+                if (buttselect == buttonselection.issue)
+                {
+                    radioButton_PC.Visible = true;
+                    radioButton_MAC.Visible = true;
+                    radioButton_Mobile.Visible = true;
+                }
+                else 
+                {
+                    radioButton_PC.Visible = false;
+                    radioButton_MAC.Visible = false;
+                    radioButton_Mobile.Visible = false;
+                }                
+            }         
+            else
+                radioButton_Replace.Visible = false;
         }
 
         private buttonselection enumcontroller(string butname)
@@ -78,6 +100,35 @@ namespace Auto
 
         private void comboBox_Subject_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox_Subject.SelectedItem != null)
+            {
+                string selectedKey = comboBox_Subject.SelectedItem.ToString();
+                string value = ComboBoxUpdater.GetValueFromSelectedKey(selectedKey);
+                string pretext = GetPreText();
+
+                if (buttselect == buttonselection.equipment)
+                {
+                    
+
+
+                }
+                    textBox_Description.Text = $"{pretext} | {value}";
+            }
+        }
+
+        private string GetPreText()
+        {
+
+            if (buttselect != buttonselection.question)
+            {
+                if (radioButton_Replace.Checked)
+                    return "Accessories - Replacement";
+                else
+                    return "Accessories - New";
+            }
+            else
+                return "Question";
+
 
         }
     }
