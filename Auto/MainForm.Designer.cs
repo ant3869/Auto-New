@@ -38,11 +38,8 @@ namespace Auto
             this.button_Clear = new System.Windows.Forms.Button();
             this.panel_left = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-<<<<<<< HEAD
-            this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Issue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-=======
->>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox_location = new System.Windows.Forms.ComboBox();
             this.panel_right = new System.Windows.Forms.Panel();
@@ -131,7 +128,6 @@ namespace Auto
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NameColumn,
             this.Issue});
-<<<<<<< HEAD
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,16 +136,6 @@ namespace Auto
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-=======
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
->>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
             this.dataGridView1.Location = new System.Drawing.Point(13, 78);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -165,7 +151,6 @@ namespace Auto
             this.dataGridView1.Size = new System.Drawing.Size(634, 626);
             this.dataGridView1.TabIndex = 2;
             // 
-<<<<<<< HEAD
             // NameColumn
             // 
             this.NameColumn.Frozen = true;
@@ -187,10 +172,6 @@ namespace Auto
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-=======
-            // button1
-            // 
->>>>>>> 518e65e2e28d8a5610f1ae6b55e1f6485ea40879
             this.button1.Location = new System.Drawing.Point(528, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 56);
