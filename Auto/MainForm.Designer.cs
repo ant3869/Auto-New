@@ -29,8 +29,8 @@ namespace Auto
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.button_Submit = new System.Windows.Forms.Button();
             this.button_Generate = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@ namespace Auto
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_Subject = new System.Windows.Forms.ComboBox();
             this.radioButton_Mobile = new System.Windows.Forms.RadioButton();
-            this.radioButton_MAC = new System.Windows.Forms.RadioButton();
+            this.radioButton_Mac = new System.Windows.Forms.RadioButton();
             this.radioButton_PC = new System.Windows.Forms.RadioButton();
             this.button_Issue = new System.Windows.Forms.Button();
             this.button_Equipment = new System.Windows.Forms.Button();
@@ -114,28 +114,28 @@ namespace Auto
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NameColumn,
             this.Issue});
             this.dataGridView1.Location = new System.Drawing.Point(8, 78);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(634, 626);
@@ -201,7 +201,7 @@ namespace Auto
             this.panel_right.Controls.Add(this.label2);
             this.panel_right.Controls.Add(this.comboBox_Subject);
             this.panel_right.Controls.Add(this.radioButton_Mobile);
-            this.panel_right.Controls.Add(this.radioButton_MAC);
+            this.panel_right.Controls.Add(this.radioButton_Mac);
             this.panel_right.Controls.Add(this.radioButton_PC);
             this.panel_right.Controls.Add(this.button_Issue);
             this.panel_right.Controls.Add(this.button_Equipment);
@@ -239,7 +239,7 @@ namespace Auto
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Bogle", 7.875F);
+            this.textBox1.Font = new System.Drawing.Font("Bogle", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(12, 648);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -250,7 +250,7 @@ namespace Auto
             // 
             this.textBox_Description.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_Description.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Description.Font = new System.Drawing.Font("Bogle", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Description.Location = new System.Drawing.Point(12, 515);
             this.textBox_Description.Multiline = true;
             this.textBox_Description.Name = "textBox_Description";
@@ -296,24 +296,28 @@ namespace Auto
             this.radioButton_Mobile.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton_Mobile.AutoSize = true;
             this.radioButton_Mobile.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_Mobile.Location = new System.Drawing.Point(142, 228);
+            this.radioButton_Mobile.Location = new System.Drawing.Point(160, 224);
             this.radioButton_Mobile.Name = "radioButton_Mobile";
             this.radioButton_Mobile.Size = new System.Drawing.Size(85, 39);
             this.radioButton_Mobile.TabIndex = 8;
             this.radioButton_Mobile.Text = "Mobile";
             this.radioButton_Mobile.UseVisualStyleBackColor = true;
+            this.radioButton_Mobile.Visible = false;
+            this.radioButton_Mobile.CheckedChanged += new System.EventHandler(this.radioButton_Mobile_CheckedChanged);
             // 
-            // radioButton_MAC
+            // radioButton_Mac
             // 
-            this.radioButton_MAC.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton_MAC.AutoSize = true;
-            this.radioButton_MAC.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_MAC.Location = new System.Drawing.Point(68, 228);
-            this.radioButton_MAC.Name = "radioButton_MAC";
-            this.radioButton_MAC.Size = new System.Drawing.Size(70, 39);
-            this.radioButton_MAC.TabIndex = 7;
-            this.radioButton_MAC.Text = "MAC";
-            this.radioButton_MAC.UseVisualStyleBackColor = true;
+            this.radioButton_Mac.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton_Mac.AutoSize = true;
+            this.radioButton_Mac.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton_Mac.Location = new System.Drawing.Point(77, 224);
+            this.radioButton_Mac.Name = "radioButton_Mac";
+            this.radioButton_Mac.Size = new System.Drawing.Size(70, 39);
+            this.radioButton_Mac.TabIndex = 7;
+            this.radioButton_Mac.Text = "MAC";
+            this.radioButton_Mac.UseVisualStyleBackColor = true;
+            this.radioButton_Mac.Visible = false;
+            this.radioButton_Mac.CheckedChanged += new System.EventHandler(this.radioButton_Mac_CheckedChanged);
             // 
             // radioButton_PC
             // 
@@ -321,13 +325,15 @@ namespace Auto
             this.radioButton_PC.AutoSize = true;
             this.radioButton_PC.Checked = true;
             this.radioButton_PC.Font = new System.Drawing.Font("Bogle", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_PC.Location = new System.Drawing.Point(12, 228);
+            this.radioButton_PC.Location = new System.Drawing.Point(12, 224);
             this.radioButton_PC.Name = "radioButton_PC";
             this.radioButton_PC.Size = new System.Drawing.Size(50, 39);
             this.radioButton_PC.TabIndex = 6;
             this.radioButton_PC.TabStop = true;
             this.radioButton_PC.Text = "PC";
             this.radioButton_PC.UseVisualStyleBackColor = true;
+            this.radioButton_PC.Visible = false;
+            this.radioButton_PC.CheckedChanged += new System.EventHandler(this.radioButton_PC_CheckedChanged);
             // 
             // button_Issue
             // 
@@ -415,7 +421,7 @@ namespace Auto
         private System.Windows.Forms.Button button_Question;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButton_Mobile;
-        private System.Windows.Forms.RadioButton radioButton_MAC;
+        private System.Windows.Forms.RadioButton radioButton_Mac;
         private System.Windows.Forms.RadioButton radioButton_PC;
         private System.Windows.Forms.ComboBox comboBox_Subject;
         private System.Windows.Forms.Label label3;
