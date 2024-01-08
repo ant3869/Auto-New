@@ -19,7 +19,7 @@ namespace Auto.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -86,6 +86,36 @@ namespace Auto.Properties {
         internal static System.Drawing.Bitmap Exe__Execute__Gears__Package__Settings__System__Utilities__Wheels_icon_icon {
             get {
                 object obj = ResourceManager.GetObject("Exe, Execute, Gears, Package, Settings, System, Utilities, Wheels icon icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reset_small {
+            get {
+                object obj = ResourceManager.GetObject("reset-small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reset_small1 {
+            get {
+                object obj = ResourceManager.GetObject("reset-small1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upload_small {
+            get {
+                object obj = ResourceManager.GetObject("upload-small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
